@@ -1,0 +1,5 @@
+{
+  "name": "TurboConverter",
+  "description": "A client-side file conversion platform for PDF and image tools. Fast, secure, and works offline.",
+  "requestFramePermissions": []
+}
