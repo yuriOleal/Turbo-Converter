@@ -31,6 +31,11 @@ import pdfReader from './pdf/pdfReader';
 import pngToPdf from './pdf/pngToPdf';
 import pdfToPng from './pdf/pdfToPng';
 
+// Office-to-PDF processors (ConvertAPI)
+import wordToPdf from './pdf/wordToPdf';
+import excelToPdf from './pdf/excelToPdf';
+import pptToPdf from './pdf/pptToPdf';
+
 /**
  * A processor function that transforms files according to tool-specific logic.
  */
@@ -72,6 +77,11 @@ export const processors: Record<string, ProcessorFn> = {
   'pdf-reader': pdfReader,
   'png-to-pdf': pngToPdf,
   'pdf-to-png': pdfToPng,
+
+  // Office-to-PDF (ConvertAPI)
+  'word-to-pdf': wordToPdf,
+  'excel-to-pdf': excelToPdf,
+  'ppt-to-pdf': pptToPdf,
 };
 
 /**

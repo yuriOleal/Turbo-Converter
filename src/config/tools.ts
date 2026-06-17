@@ -138,6 +138,36 @@ export const TOOLS: Tool[] = [
     allowMultiple: true,
     supportsBatch: false,
   },
+  {
+    id: 'word-to-pdf',
+    name: 'Word to PDF',
+    description: 'Convert Word documents (.docx) to PDF.',
+    category: ToolCategory.PDF_CONVERT_TO,
+    iconName: 'FileText',
+    acceptedFormats: '.doc,.docx',
+    allowMultiple: false,
+    supportsBatch: false,
+  },
+  {
+    id: 'excel-to-pdf',
+    name: 'Excel to PDF',
+    description: 'Convert Excel spreadsheets (.xlsx) to PDF.',
+    category: ToolCategory.PDF_CONVERT_TO,
+    iconName: 'Table',
+    acceptedFormats: '.xls,.xlsx',
+    allowMultiple: false,
+    supportsBatch: false,
+  },
+  {
+    id: 'ppt-to-pdf',
+    name: 'PowerPoint to PDF',
+    description: 'Convert PowerPoint presentations (.pptx) to PDF.',
+    category: ToolCategory.PDF_CONVERT_TO,
+    iconName: 'Presentation',
+    acceptedFormats: '.ppt,.pptx',
+    allowMultiple: false,
+    supportsBatch: false,
+  },
 
   // --- CONVERT FROM PDF ---
   {
